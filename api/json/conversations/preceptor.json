@@ -1,0 +1,60 @@
+{
+    "responses" : [
+        {
+            "text" : "PAROU",
+            "percent" : 50
+        },
+        {
+            "text" : "eu ri",
+            "percent" : 50
+        },
+        {
+            "text" : "sim, só pra rir",
+            "percent" : 50
+        },
+        {
+            "text" : "vou rir",
+            "percent" : 50
+        },
+        {
+            "text" : "confio não",
+            "percent" : 50
+        },
+        {
+            "text" : "BOAAAA",
+            "percent" : 50
+        },
+        {
+            "text" : "parou",
+            "percent" : 50
+        },
+        {
+            "text" : "nao, nmrl",
+            "percent" : 50
+        },
+        {
+            "text" : "nmrl",
+            "percent" : 50
+        },
+        {
+            "text" : "menos né",
+            "percent" : 50
+        },
+        {
+            "text" : "vou começar a rir",
+            "percent" : 50
+        },
+        {
+            "text" : "RUINZAO",
+            "percent" : 50
+        },
+        {
+            "text" : "É o maior gênio de 2024",
+            "percent" : 50
+        },
+        {
+            "text" : "&{ctxUserMention} parou",
+            "percent" : 50
+        }
+    ]
+}

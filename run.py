@@ -1,6 +1,6 @@
-from app.app import criar_app
+from app.app import create_app
 
-app = criar_app()
+app = create_app()
 
 if __name__ == "__main__":
     #from host:

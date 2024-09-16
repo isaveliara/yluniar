@@ -4,7 +4,7 @@ from api.calculator.image import render_steps_to_image, replace_chars_for_render
 from api.script import JsonService
 import json
 
-#Blueprint das rotas
+#blueprints
 bp = Blueprint('routes', __name__)
 
 #calculator
