@@ -1,0 +1,24 @@
+{
+    "responses" : [
+        {
+            "text" : "não sei, mas nunca comi pão com banana",
+            "percent" : 11
+        },
+        {
+            "text" : "square cloud",
+            "percent" : 40
+        },
+        {
+            "text" : "sql alchemy",
+            "percent" : 40
+        },
+        {
+            "text" : "meia noite",
+            "percent" : 8
+        },
+        {
+            "text" : "KKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK",
+            "percent" : 1
+        }
+    ]
+}
