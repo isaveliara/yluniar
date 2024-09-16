@@ -1,4 +1,5 @@
 Using the `/api/calc` route:
+- This route returns the result of the equation as an image. But don’t get too excited, it’s working about as well as a square ball.
 
 - **Quadratic equations**: Use the form `ax² + bx + c = 0`, where `a`, `b`, and `c` are constants.
   - Example: `2x² + 3x + 1 = 0`
@@ -15,12 +16,15 @@ Using the `/api/calc` route:
   
 - **Invalid equations**: Equations like `4 = 0` won't work as there's no variable `x`.
 
+
 Using `api/people/{person}` and `api/people/{person}/says` routes:
+
 - These routes are just jokes, where the first one returns all phrases of the person, and the second one an already chosen phrase.
   - Example: `api/people/preceptor`
     returns all phrases.
   - Example: `api/people/preceptor/says`
-    ```
+
+    ```json
     {
         "text": "eu ri",
         "percent": 7
