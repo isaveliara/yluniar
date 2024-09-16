@@ -1,3 +1,5 @@
+Using the `/api/calc` route:
+
 - **Quadratic equations**: Use the form `ax² + bx + c = 0`, where `a`, `b`, and `c` are constants.
   - Example: `2x² + 3x + 1 = 0`
   
@@ -12,3 +14,15 @@
 - **Complex roots**: If the discriminant is negative (e.g., `x² + 1 = 0`), expect complex roots.
   
 - **Invalid equations**: Equations like `4 = 0` won't work as there's no variable `x`.
+
+Using `api/people/{person}` and `api/people/{person}/says` routes:
+- These routes are just jokes, where the first one returns all phrases of the person, and the second one an already chosen phrase.
+  - Example: `api/people/preceptor`
+    returns all phrases.
+  - Example: `api/people/preceptor/says`
+    ```
+    {
+        "text": "eu ri",
+        "percent": 7
+    }
+    ```
