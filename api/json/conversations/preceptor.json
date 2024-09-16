@@ -2,59 +2,59 @@
     "responses" : [
         {
             "text" : "PAROU",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "eu ri",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "sim, só pra rir",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "vou rir",
-            "percent" : 50
+            "percent" : 8
         },
         {
             "text" : "confio não",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "BOAAAA",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "parou",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "nao, nmrl",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "nmrl",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "menos né",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "vou começar a rir",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "RUINZAO",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "É o maior gênio de 2024",
-            "percent" : 50
+            "percent" : 7
         },
         {
             "text" : "&{ctxUserMention} parou",
-            "percent" : 50
+            "percent" : 8
         }
     ]
 }
