@@ -4,7 +4,7 @@
         "revealAnswerOnFail": true,
         "chances": -1,
         "numWins": -1,
-        "rate": 10,
+        "rate": 30,
         "rateVariance": 5
     },
     "questions": [
