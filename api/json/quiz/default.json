@@ -1,0 +1,229 @@
+{
+    "quiz_info": {
+        "numQuestions": -1,
+        "revealAnswerOnFail": true,
+        "chances": -1,
+        "numWins": -1,
+        "rate": 10,
+        "rateVariance": 5
+    },
+    "questions": [
+        {
+            "build": {
+                "title": "Pronome relativo",
+                "description": "Aplique nas orações abaixo a substituição para o uso do pronome relativo.\n\n- Conheço o professor.\n- O professor morreu.",
+                "color": "#FF5733",
+                "footer": "5 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*! Também podem ser usados os pronomes (que, a quem, etc)",
+            "answers": [
+                "^Conheço o professor (que|o qual|a qual|os quais|as quais) morreu\\.$"
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Correção de Regência Verbal",
+                "description": "Corrija a regência verbal na frase: 'Eu assisti o filme ontem.'",
+                "color": "#FF5733",
+                "footer": "1 Respostas válidas"
+            },
+            "response": "Correto! A regência correta é 'Eu assisti ao filme ontem.'",
+            "answers": [
+                "assisti ao filme",
+                "^Eu assisti ao filme ontem.$"
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Correção de Concordância Verbal",
+                "description": "Corrija a concordância verbal na frase: 'As criança brinca no parque.'",
+                "color": "#33FF57",
+                "footer": "1 Respostas válidas"
+            },
+            "response": "Correto! A concordância correta é 'As crianças brincam no parque.'",
+            "answers": [
+                "As crianças brincam no parque",
+                "^As crianças brincam no parque.$"
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Correção de Ortografia",
+                "description": "Corrija a ortografia na frase: 'Ele era um homem muito imcensivel.'",
+                "color": "#FF5733",
+                "footer": "1 Respostas válidas"
+            },
+            "response": "Correto! A ortografia correta é 'Ele era um homem muito insensível.'",
+            "answers": [
+                "insensível",
+                "^Ele era um homem muito insensível.$"
+            ],
+            "worth": 4
+        },
+        {
+            "build": {
+                "title": "Correção de Crase",
+                "description": "Corrija o uso da crase na frase: 'Ele foi a escola.'",
+                "color": "#33FF57",
+                "footer": "1 Respostas válidas"
+            },
+            "response": "Correto! O uso correto da crase é 'Ele foi à escola.'",
+            "answers": [
+                "à escola",
+                "^Ele foi à escola.$"
+            ],
+            "worth": 4
+        },
+        {
+            "build": {
+                "title": "Correção de Colocação Pronominal",
+                "description": "Corrija a colocação pronominal na frase: 'Me avise quando chegar.'",
+                "color": "#FF5733",
+                "footer": "1 Respostas válidas"
+            },
+            "response": "Correto! A colocação pronominal correta é 'Avise-me quando chegar.'",
+            "answers": [
+                "Avise-me",
+                "^Avise-me quando chegar.$"
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Escolha o termo correto: 'seção', 'sessão' ou 'cessão'?",
+                "description": "Qual termo correto para indicar uma divisão de algo? (seção, sessão ou cessão)",
+                "color": "#33FF57",
+                "footer": "Escolha entre: seção, sessão, cessão"
+            },
+            "response": "Correto! O termo correto é 'seção'.",
+            "answers": [
+                "seção",
+                "^seção$"
+            ],
+            "worth": 3
+        },
+        {
+            "build": {
+                "title": "Pronome relativo",
+                "description": "Aplique a substituição do pronome relativo na frase: 'A menina que canta é minha irmã.'",
+                "color": "#FF5733",
+                "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*! Também podem ser usados os pronomes (que, a qual, etc).",
+            "answers": [
+                "A menina (que|a qual) canta é minha irmã\\."
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Pronome relativo",
+                "description": "Substitua o pronome relativo na frase: 'O livro que você me deu é interessante.'",
+                "color": "#FF5733",
+                "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*! Também podem ser usados os pronomes (que, o qual, etc).",
+            "answers": [
+                "O livro (que|o qual) você me deu é interessante\\."
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Pronome relativo",
+                "description": "Complete a frase com o pronome relativo adequado: 'Ela é a artista _____ pintou aquele quadro.'",
+                "color": "#FF5733",
+                "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*! Também podem ser usados os pronomes (que, a qual, etc).",
+            "answers": [
+                "Ela é a artista (que|a qual) pintou aquele quadro\\."
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Pronome relativo",
+                "description": "Transforme a frase usando um pronome relativo: 'O aluno estudou muito. Ele passou no exame.'",
+                "color": "#FF5733",
+                "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*! Também podem ser usados os pronomes (que, a qual, etc).",
+            "answers": [
+                "O aluno (que|o qual) estudou muito passou no exame\\."
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Pronome relativo",
+                "description": "Substitua na frase: 'A cidade onde eu nasci é linda.'",
+                "color": "#FF5733",
+                "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*! Também podem ser usados os pronomes (que, a qual, etc).",
+            "answers": [
+                "A cidade (onde|na qual) eu nasci é linda\\."
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Correção de Crase",
+                "description": "Corrija o uso da crase na frase: 'Ela foi a festa ontem.'",
+                "color": "#FF5733",
+                "footer": "1 Resposta válida"
+            },
+            "response": "Correto! O uso correto da crase é 'Ela foi à festa ontem.'",
+            "answers": [
+                "à festa",
+                "^Ela foi à festa ontem\\.$"
+            ],
+            "worth": 4
+        },
+        {
+            "build": {
+                "title": "Correção de Crase",
+                "description": "Corrija o uso da crase na frase: 'Vou a escola todos os dias.'",
+                "color": "#FF5733",
+                "footer": "1 Resposta válida"
+            },
+            "response": "Correto! O uso correto da crase é 'Vou à escola todos os dias.'",
+            "answers": [
+                "à escola",
+                "^Vou à escola todos os dias\\.$"
+            ],
+            "worth": 4
+        },
+        {
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Complete a frase com o pronome relativo adequado: 'A cidade _____ eu nasci é linda.'",
+                "color": "#FF5733",
+                "footer": "1 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*!",
+            "answers": [
+                "A cidade onde eu nasci é linda\\."
+            ],
+            "worth": 5
+        },
+        {
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Complete a frase com o pronome relativo adequado: 'Ele vai _____ a festa acontecer.'",
+                "color": "#FF5733",
+                "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser *&{getanswer}*!",
+            "answers": [
+                "Ele vai aonde a festa acontecer\\.",
+                "aonde"
+            ],
+            "worth": 6
+        }
+    ]
+}
