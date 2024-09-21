@@ -46,6 +46,7 @@ class PeopleService:
             return {"status": "error", "response": f"Erro ao ler o arquivo: {e}"}
 
 
+
 class QuizService:
     @staticmethod
     def load_json_data(filename): #private
@@ -67,7 +68,7 @@ class QuizService:
         if quiz_data['status'] == "error":
             return quiz_data['response']
         
-        return {"status": "success", "response": quiz_data}
+        return {"status": "success", "response": quiz_data["response"]}
     
     @staticmethod
     def get_individual_question(filename: str):

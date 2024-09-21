@@ -33,17 +33,7 @@ def route_get_people_dialogue_response(people: str):
 @bp.route('/api/quiz/theme/<string:theme>')
 def get_quiz_data(theme: str):
     quiz_data = QuizService.get_question_data(theme)
-    
-    if quiz_data['status'] == "success":
-        return jsonify({
-            "status": "success",
-            "response": quiz_data['response']
-        }), 200
-    else:
-        return jsonify({
-            "status": "error",
-            "response": quiz_data['response']
-        }), 404
+    return jsonify(quiz_data), 200 if quiz_data else 404
 
 #retornar pergunta individual do quiz
 @bp.route('/api/quiz/question/<string:theme>', methods=['GET'])
