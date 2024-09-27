@@ -1,0 +1,46 @@
+{
+    "quiz_info": {
+        "requires" : "admin",
+        "numQuestions": -1,
+        "revealAnswerOnFail": true,
+        "chances": -1,
+        "numWins": -1,
+        "rate": 30,
+        "rateVariance": 5
+    },
+
+    "questions": [
+        {
+            "index" : 0,
+            "build": {
+                "title": "Teste de digitação",
+                "description": "Digite a letra 'A'",
+                "color": "#FF5733",
+                "file" : null,
+                "footer": "1 resposta válida"
+            },
+            "response": "&{responded} conseguiu primeiro!",
+            "answers": [
+                "^(a|A)$"
+            ],
+            "worth": 5
+        },
+
+        {
+            "index" : 1,
+            "build": {
+                "title": "Leitura de Imagem",
+                "description": "Transcreva a frase que está transcrita na imagem:",
+                "color": "#FF5733",
+                "file" : "&<getAndWaitImageRead>",
+                "footer": "1 resposta válida"
+            },
+            "response": "&{responded} conseguiu primeiro!",
+            "answers": [
+                "^pass$"
+            ],
+            "worth": 5
+        }
+
+    ]
+}

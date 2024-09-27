@@ -1,0 +1,146 @@
+{
+    "quiz_info": {
+        "requires" : "beta",
+        "numQuestions": -1,
+        "revealAnswerOnFail": true,
+        "chances": -1,
+        "numWins": -1,
+        "rate": 30,
+        "rateVariance": 5
+    },
+
+    "questions": [
+        {
+            "index" : 1,  "worth": 3,
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Complete a frase com o pronome relativo adequado: 'Ele vai _____ a festa acontecer.'",
+                "color": "#FF5733",  "file" : null,  "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser **&{getanswer}**!",
+            "answers": [
+                "^(aonde|Ele vai aonde a festa acontecer).*\\.?$"
+            ]
+        },
+
+        {
+            "index" : 1,  "worth": 4,
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Relacione a frase **completa** usando pronome relativo:\n\n- O aluno estudou muito.\n- Ele passou no exame.",
+                "color": "#FF5733",  "file" : null,  "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser **&{getanswer}**!",
+            "answers": [
+                "^O aluno (que|o qual) estudou muito passou no exame.*\\.?$"
+            ]
+        },
+
+        {
+            "index" : 1,  "worth": 3,
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Substitua na frase: 'A cidade onde eu nasci é linda.'",
+                "color": "#FF5733",  "file" : null,  "footer": "4 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser **&{getanswer}**!",
+            "answers": [
+                "^(onde|na qual).*\\.?$",
+                "^A cidade (onde|na qual) eu nasci é linda.*\\.?$"
+            ]
+        },
+
+        {
+            "index" : 1,  "worth": 3,
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Aplique nas orações abaixo a substituição para o uso do pronome relativo.\n\n- Conheço o professor.\n- O professor morreu.",
+                "color": "#FF5733",  "file" : null,  "footer": "4 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser **&{getanswer}**!",
+            "answers": [
+                "^Conheço o professor (que|o qual) morreu.*\\.?$"
+            ]
+        },
+
+        {
+            "index" : 1,  "worth": 3,
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Complete a frase com o pronome relativo adequado: 'A cidade _____ eu nasci é linda.'",
+                "color": "#FF5733",  "file" : null,  "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser **&{getanswer}**!",
+            "answers": [
+                "^(onde|A cidade onde eu nasci é linda).*\\.?$"
+            ]
+        },
+
+        {
+            "index" : 1,  "worth": 3,
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Troque o pronome relativo usado na frase:\n'A menina a qual canta é minha irmã.'",
+                "color": "#FF5733",  "file" : null,  "footer": "2 respostas válidas"
+            },
+            "response": "Correto! O pronome pode ser **&{getanswer}**!",
+            "answers": [
+                "^A menina que canta é minha irmã.*\\.?$"
+            ]
+        },
+
+        {
+            "index" : 1,  "worth": 2,
+            "build": {
+                "title": "Uso do Pronome Relativo",
+                "description": "Diga o pronome relativo adequado para completar a frase:\n\n'Ela é a artista _____ pintou aquele quadro.' (que ou a qual)",
+                "color": "#FF5733",  "file" : null,  "footer": "2 respostas válidas"
+            },
+            "response": "Correto! O pronome pode ser **&{getanswer}**!",
+            "answers": [
+                "^(que|a qual).*\\.?$"
+            ]
+        },
+
+
+        {
+            "index" : 1,  "worth": 2,
+            "build": {
+                "title": "Correção de Crase",
+                "description": "Corrija o uso de crase na frase: 'Vou a escola todos os dias.'",
+                "color": "#FF5733",  "file" : null,  "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser **&{getanswer}**!",
+            "answers": [
+                "^(à escola|Vou à escola todos os dias).*\\.?$"
+            ]
+        },
+
+        {
+            "index" : 1,  "worth": 2,
+            "build": {
+                "title": "Correção de Crase",
+                "description": "Corrija o uso de crase na frase: 'Ela foi a festa ontem.'",
+                "color": "#FF5733",  "file" : null,  "footer": "2 respostas válidas"
+            },
+            "response": "Correto! A resposta pode ser **&{getanswer}**!",
+            "answers": [
+                "^(à festa|Ela foi à festa ontem).*\\.?$"
+            ]
+        },
+
+        
+        {
+            "index" : 1,  "worth": 2,
+            "build": {
+                "title": "Escolha o termo correto: seção, sessão ou cessão?",
+                "description": "Qual termo correto para indicar uma divisão de algo? (seção, sessão ou cessão)",
+                "color": "#FF5733",  "file" : null,  "footer": "Escolha entre: seção, sessão, cessão"
+            },
+            "response": "Correto! O termo usado é **seção**!",
+            "answers": [
+                "^seção.*\\.?$"
+            ]
+        }
+    ]
+}

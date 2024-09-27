@@ -1,9 +1,10 @@
-from flask import Blueprint, jsonify
+import json
+from flask import Blueprint, jsonify, render_template, request
 from api.calculator.eqt_solver import process_equation_with_steps
 from api.calculator.image import render_steps_to_image, replace_chars_for_render_in_image
 from api.script import PeopleService, QuizService
 
-# Blueprints
+#Blueprints
 bp = Blueprint('routes', __name__)
 
 ###calculator
@@ -40,3 +41,7 @@ def get_quiz_data(theme: str):
 def get_random_question(theme: str):
     random_question = QuizService.get_individual_question(theme)
     return jsonify(random_question), 200 if isinstance(random_question, dict) else 404
+
+
+
+################################################################################################################################

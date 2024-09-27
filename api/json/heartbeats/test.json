@@ -1,0 +1,10 @@
+{
+    "owner" : "pixelar144",
+    "created" : "15:28 - sep/27/2024",
+    "type" : "receive",
+    "used" : [
+        1234567891011121314
+    ],
+    "defs" : "once receive{ role 1413121110987654321 }",
+    "script" : "npt:: ban() -> $trigger> \nnpt::log('<#1111111111>') -> 'banned'"
+}

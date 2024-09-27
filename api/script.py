@@ -49,7 +49,7 @@ class PeopleService:
 
 class QuizService:
     @staticmethod
-    def load_json_data(filename): #private
+    def load_json_data(filename):
         file_path = f"./api/json/quiz/{filename}.json"
         if not os.path.exists(file_path):
             return {"status": "error", "response": f"Arquivo '{filename}' não encontrado."}
@@ -60,6 +60,19 @@ class QuizService:
                 return {"status": "success", "response": data}
         except Exception as e:
             return {"status": "error", "response": f"Erro ao ler o arquivo: {e}"}
+    
+    @staticmethod
+    def save_json_data(filename: str, data: json):
+        file_path = f"./api/json/quiz/{filename}.json"
+        if not os.path.exists(file_path):
+            return {"status": "error", "response": f"Arquivo '{filename}' não encontrado."}
+        
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                json.dump(data, file, indent=4)
+                return {"status": "success", "response": data}
+        except Exception as e:
+            return {"status": "error", "response": f"Erro ao salvar o arquivo: {e}"}
     
 
     @staticmethod
