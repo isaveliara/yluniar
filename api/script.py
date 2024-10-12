@@ -95,3 +95,17 @@ class QuizService:
         
         random_question = random.choice(questions)
         return {"status": "success", "response": random_question}
+
+class ListenersService:
+    @staticmethod
+    def returnATestListener(serverid: int, typelisten: str):
+        file_path = f"./api/json/heartbeats/{typelisten}.json"
+        if not os.path.exists(file_path):
+            return {"status": "error", "response": f"Listener '{typelisten}' não encontrado."}
+        
+        try:
+            with open(file_path, 'r', encoding='utf-8') as file:
+                data = json.load(file)
+                return {"status": "success", "response": data}
+        except Exception as e:
+            return {"status": "error", "response": f"Erro ao ler o listener: {e}"}

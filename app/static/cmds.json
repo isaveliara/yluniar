@@ -1,0 +1,137 @@
+[
+    {
+        "name": "cartoon",
+        "description": "Aplica um efeito de cartoon na imagem referida.",
+        "class": "Fun",
+        "usage": "&oldc <mention> | <attachment> | yourself",
+        "args": "[mention | attachment]",
+        "tags": ["Image", "Fun"],
+        "image": null
+    },
+    {
+        "name": "curse",
+        "description": "Aplica o efeito inverso na imagem referida.",
+        "class": "Fun",
+        "usage": "&curse <mention> | <attachment> | yourself",
+        "args": "[mention | attachment]",
+        "tags": ["Image", "Fun"],
+        "image": null
+    },
+    {
+        "name": "deepfry",
+        "description": "Aplica o efeito deepfry na imagem referida.",
+        "class": "Fun",
+        "usage": "&deepfry <mention> | <attachment> | yourself",
+        "args": "[mention | attachment]",
+        "tags": ["Image", "Fun"],
+        "image": null
+    },
+    {
+        "name": "pixelar",
+        "description": "Aplica pixelarização na imagem referida.",
+        "class": "Fun",
+        "usage": "&pixelar <mention> | <attachment> | yourself",
+        "args": "[mention | attachment]",
+        "tags": ["Image", "Fun"],
+        "image": "images/pixelar_example.png"
+    },
+    {
+        "name": "sad",
+        "description": "Aplica escala preto e branco na imagem referida.",
+        "class": "Fun",
+        "usage": "&sad <mention> | <attachment> | yourself",
+        "args": "[mention | attachment]",
+        "tags": ["Image", "Fun"],
+        "image": null
+    },
+    {
+        "name": "void",
+        "description": "Aplica efeito glith na imagem referida.",
+        "class": "Fun",
+        "usage": "&void <mention> | <attachment> | yourself",
+        "args": "[mention | attachment]",
+        "tags": ["Image", "Fun"],
+        "image": null
+    },
+    {
+        "name": "take",
+        "description": "É como um cara ou coroa, mas em uma pegada de poker.",
+        "class": "Fun",
+        "usage": "&take",
+        "args": "nenhum",
+        "tags": ["Fun"],
+        "image": null
+    },
+    {
+        "name": "ship",
+        "description": "Mostra a aprovação de uma relação entre membros. Pode ser manipulado caso usado em slash (/ship).",
+        "class": "Fun",
+        "usage": "&ship <user> [user2]",
+        "args": "[user] [user2]",
+        "tags": ["Fun", "Comunidade"],
+        "image": "images/ship_example.png"
+    },
+    {
+        "name": "server_channels",
+        "description": "Mostra os canais do servidor que marcam a condição especificada.",
+        "class": "Informativo",
+        "usage": "&server_channels [search_string]",
+        "args": "[search_string]",
+        "tags": ["Informativo", "Servidor"],
+        "image": null
+    },
+    {
+        "name": "server_info",
+        "description": "Mostra as informações básicas do servidor.",
+        "class": "Informativo",
+        "usage": "&server_info",
+        "args": null,
+        "tags": ["Informativo", "Servidor"],
+        "image": null
+    },
+    {
+        "name": "user_info",
+        "description": "Mostra a descrição do usuário.",
+        "class": "Informativo",
+        "usage": "&user_info [user]",
+        "args": "[user]",
+        "tags": ["Informativo"],
+        "image": null
+    },
+    {
+        "name": "profile",
+        "description": "Mostra o perfil do usuário.",
+        "class": "Informativo",
+        "usage": "&profile [user]",
+        "args": "[user]",
+        "tags": ["Informativo", "Image"],
+        "image": null
+    },
+    {
+        "name": "help",
+        "description": "Mostra o Menu de Ajuda.",
+        "class": "Utilitário",
+        "usage": "&Help | @Sun",
+        "args": null,
+        "tags": ["Utilitário"],
+        "image": null
+    },
+    {
+        "name": "info",
+        "description": "Mostra as informações da Suni.",
+        "class": "Informativo",
+        "usage": "&info",
+        "args": null,
+        "tags": ["Informativo"],
+        "image": null
+    },
+    {
+        "name": "calc",
+        "description": "Retorna o resultado de um cálculo. Você pode usar também os comandos &exp e &true como ferramentas adicionais para este comando.",
+        "class": "Auxiliar",
+        "usage": "&calc <expressão>",
+        "args": "[expressão]",
+        "tags": ["Auxiliar"],
+        "image": null
+    }
+]

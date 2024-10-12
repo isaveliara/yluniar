@@ -1,0 +1,13 @@
+[
+    { "name": "moderação", "color": "#FF5733" },
+    { "name": "diversão", "color": "#33CFFF" },
+    { "name": "edição", "color": "#9B59B6" },
+    { "name": "geral", "color": "#2ECC71" },
+    { "name": "utilitário", "color": "#F1C40F" },
+    { "name": "informativo", "color": "#E67E22" },
+    { "name": "Image", "color": "#CCCCCC" },
+    { "name": "Fun", "color": "#FFD700" },
+    { "name": "Comunidade", "color": "#FF1493" },
+    { "name": "Servidor", "color": "#4682B4" },
+    { "name": "Auxiliar", "color": "#8A2BE2" }
+]
