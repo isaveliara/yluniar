@@ -42,7 +42,7 @@ header {
 }
 
 .header-inner .button-container a img {
-    width: 40px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: 40px;
     height: 40px;
     cursor: pointer;
     transition: opacity 0.3s;
@@ -56,7 +56,7 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 60px; /* Ajuste o espaçamento conforme necessário */
+    margin-top: 60px; /**/
 }
 
 .filters {
@@ -94,7 +94,7 @@ main {
     flex: 1;
     padding: 20px;
     display: flex;
-    justify-content: flex-start; /* Alinha à esquerda */
+    justify-content: flex-start;
 }
 
 .container {
@@ -105,10 +105,10 @@ main {
 .command-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 4rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha à esquerda */
+    align-items: flex-start; /*alinha à esquerda + 4rem*/
 }
 
 .command-list li {
@@ -116,7 +116,7 @@ main {
     border-radius: 8px;
     border: 1px solid #444;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s, box-shadow 0.3s, max-height 0.5s;
     width: 100%;
@@ -125,13 +125,13 @@ main {
     position: relative;
     overflow: hidden;
     cursor: pointer;
-    border-left: 10px solid; /* Bordas coloridas baseadas na tag */
-    max-height: 120px; /* Tamanho padrão quando a descrição e imagem estão ocultos */
-    word-wrap: break-word; /* Quebra de linha para mensagens longas */
+    border-left: 10px solid; /*bordas coloridas baseadas na tag */
+    max-height: 120px; /*tamanho padrão quando a descrição e imagem estão ocultos */
+    word-wrap: break-word; /*quebra de linha para mensagens longas */
 }
 
 .command-list li.expanded {
-    max-height: 500px; /* Tamanho expandido quando a descrição e imagem estão visíveis */
+    max-height: 500px; /*tamanho expandido quando a descrição e imagem estão visíveis */
 }
 
 .command-list li:hover {

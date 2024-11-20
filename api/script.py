@@ -50,7 +50,7 @@ class PeopleService:
 class QuizService:
     @staticmethod
     def load_json_data(filename):
-        file_path = f"./api/json/quiz/{filename}.json"
+        file_path = f"./api/json/quiz/new/{filename}.json"
         if not os.path.exists(file_path):
             return {"status": "error", "response": f"Arquivo '{filename}' não encontrado."}
         
