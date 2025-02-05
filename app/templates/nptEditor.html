@@ -1,8 +1,15 @@
-{% extends 'base.html' %}
-
-{% block title %}Highlight NPT{% endblock %}
-
-{% block content %}
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codeblock</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/codeblock_styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Npt Sintax Highlight V1</h1>
+    </header>
     <h2>Exemplo de Codeblock</h2>
     {{ codeblock | safe }}
 
@@ -28,4 +35,5 @@
             document.getElementById("highlight-output").innerHTML = result.highlighted_code;
         };
     </script>
-{% endblock %}
+</body>
+</html>

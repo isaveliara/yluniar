@@ -4,6 +4,7 @@ body {
     border-radius: 8px;
     padding: 40px;
     font-family: 'Fira Code', monospace;
+    color: #292a2c;
     position: relative;
     margin: 20px 0;
 }
