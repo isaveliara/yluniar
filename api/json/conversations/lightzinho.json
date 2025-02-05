@@ -1,0 +1,56 @@
+{
+    "responses" : [
+        {
+            "text" : "sim, sem rir",
+            "percent" : 7
+        },
+        {
+            "text" : "irmão",
+            "percent" : 7
+        },
+        {
+            "text" : "sim",
+            "percent" : 7
+        },
+        {
+            "text" : "não sei, vai pela sombra",
+            "percent" : 7
+        },
+        {
+            "text" : "cara, sei não..",
+            "percent" : 7
+        },
+        {
+            "text" : "ri",
+            "percent" : 7
+        },
+        {
+            "text" : "nmrl",
+            "percent" : 14
+        },
+        {
+            "text" : "passou de 2 palavras eu não leio",
+            "percent" : 9
+        },
+        {
+            "text" : "sim, valeu",
+            "percent" : 7
+        },
+        {
+            "text" : "claro :3",
+            "percent" : 7
+        },
+        {
+            "text" : "sei não",
+            "percent" : 7
+        },
+        {
+            "text" : "nisso eu sou muito, dá não",
+            "percent" : 7
+        },
+        {
+            "text" : "&{repeatThree} irmão",
+            "percent" : 7
+        }
+    ]
+}

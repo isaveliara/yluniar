@@ -1,39 +1,350 @@
 {
     "quiz_info": {
+        "theme_description": "",
         "requires" : "user",
         "version" : "1.1",
         "questionsLimite": -1,
         "revealAnswerOnFail": true,
         "attempts": -1,
-        "pointsForWin": -1,
+        "pointsForUserWin": -1,
         "rate": 30,
         "rateVariance": 5
     },
-
-
     "questions": [
         {
-            "index" : 1,  "worth": 3,"response_file" : null,
+            "index" : 1,  "worth": 4,"response_file" : null,
             "build": {
                 "title": "Doors Q1",
                 "description": "Qual o número de entidades que o jogo possui?",
                 "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
             },
-            "response": "Sim! Juntando os pisos Backdoor, The Hotel, The Rooms, Retro Mode, The mines e o The hotel em Super Hard mode, somam 45 entidades diferentes.",
+            "response": "Sim! Juntando os pisos de Backdoor, The Hotel, The Rooms, Retro Mode, The mines e o The hotel em Super Hard mode, somam 45 entidades diferentes.",
             "answers": [
-                "^45 (entidades)?$"
+                "^45( entidades)?$"
             ]
         },
         {
-            "index" : 2,  "worth": 3,"response_file" : null,
+            "index" : 2,  "worth": 4,"response_file" : null,
             "build": {
                 "title": "Doors Q2",
-                "description": "my question",
+                "description": "Qual o nome por extenso do midifier ToT?",
                 "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
                 },
             "response": "Sim! A resposta pode ser &{answer_provided}",
             "answers": [
-                "^my answer$"
+                "^trick or treat$"
+            ]
+        },
+        {
+            "index" : 3,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q3",
+                "description": "Quanto é 392 + 6?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^958$"
+            ]
+        },
+        {
+            "index" : 4,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q4",
+                "description": "quanto é 400 - 3?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^177$"
+            ]
+        },
+        {
+            "index" : 5,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q5",
+                "description": "QUal a entidade que vai e volta indefinidas vezes e antes da porta 1?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^blitz$"
+            ]
+        },
+        {
+            "index" : 6,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q6",
+                "description": "Qual o nome da conquista, atualmente inata, dada pelo Super Hard Mode?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^survival the jeff the killer$"
+            ]
+        },
+        {
+            "index" : 7,  "worth": 6,"response_file" : null,
+            "build": {
+                "title": "Doors Q7",
+                "description": "Qual o item que foi removido no lançamento do The Mines, onde é atualmente adiquirivel apenas no Super Hard Mode? (Difícil)",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^nvcs-3000$"
+            ]
+        },
+        {
+            "index" : 8,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q8",
+                "description": "Qual a única entidade que torna possível matar outros jogadores diretamente? (Difícil)",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^(o|a)?subspace tripmine$"
+            ]
+        },
+        {
+            "index" : 9,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q9",
+                "description": "Qual o único lugar que o Rush pode fazer rebotes (voltar), similar ao ambush?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^(super hard mode|shm)$"
+            ]
+        },
+        {
+            "index" : 10,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q10",
+                "description": "Quanto de dano a Banana Peel dá quando atinge um jogador?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^10$"
+            ]
+        },
+        {
+            "index" : 11,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q11",
+                "description": "Qual o nome da sala encontrada muito raramente entre as portas 90?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}. O Hedge Maze pode ser encontrado entre as portas 90 no modo Super Hard Mode.",
+            "answers": [
+                "^(hedge maze|(o )?labirinto)$"
+            ]
+        },
+        {
+            "index" : 12,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q12",
+                "description": "Quem sou eu? Sagrado(a), posso expurgar entidades e também sou agrupável",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^holy (hand )?grenade$"
+            ]
+        },
+        {
+            "index" : 13,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q13",
+                "description": "Quais itens de Doors são referências a Fortnite?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^(mini )?shield potion$"
+            ]
+        },
+        {
+            "index" : 14,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q14",
+                "description": "Qual entidade que está no jogo para te enganar?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+                },
+            "response": "Sim! A resposta pode ser &{answer_provided}",
+            "answers": [
+                "^dupe$"
+            ]
+        },
+        {
+            "index" : 15,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q15",
+                "description": "quantas portas numéricas diferentes podem ser abertas em todo o jogo, legitimamente?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "**1350**! são: backdoor(50) + the hotel(100) + the rooms(1000) + the mines(100) + super hard mode(100).",
+            "answers": [
+                "^1350$"
+            ]
+        },
+        {
+            "index" : 16,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q16",
+                "description": "quantas portas numéricas diferentes podem ser abertas em todo o jogo?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "são 1451: backdoor(50) + the hotel(101) (101 sendo acessível com script) + the rooms(1000) + the mines(100) + super hard mode(100) + retro mode(100) (modo esse sendo acessível com script).",
+            "answers": [
+                "^1451$"
+            ]
+        },
+        {
+            "index" : 17,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q17",
+                "description": "qual o maior número de portas numéricas que podem ser abertas em uma unica run?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "são abertas **1250** portas indo para os modos backdoor, the hotel, the rooms e the mines.",
+            "answers": [
+                "^1250$"
+            ]
+        },
+        {
+            "index" : 18,  "worth": 4,"response_file" : null,
+            "build": {
+                "title": "Doors Q18",
+                "description": "quantas vezes o jogador pode ver o figure em uma única run em Doors e sem usar cheats?",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "Sim! A resposta pode ser &{answer_provided}.",
+            "answers": [
+                "^5( vezes)?$"
+            ]
+        },
+        {
+            "index" : 19,  "worth": 3,"response_file" : null,
+            "build": {
+                "title": "Doors Q19",
+                "description": "Adivinhe a entidade pelos emojis:\n⬛👁️",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "Sim! a entidade é o &{answer_provided}.",
+            "answers": [
+                "^seek$"
+            ]
+        },
+        {
+            "index" : 20,  "worth": 3,"response_file" : null,
+            "build": {
+                "title": "Doors Q20",
+                "description": "Adivinhe a entidade pelos emojis:\n⚫👁️",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "Sim! a entidade é o &{answer_provided}.",
+            "answers": [
+                "^screech$"
+            ]
+        },
+        {
+            "index" : 21,  "worth": 3,"response_file" : null,
+            "build": {
+                "title": "Doors Q21",
+                "description": "Adivinhe a entidade pelos emojis:\n🕳️⬛",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "Sim! a entidade é o &{answer_provided}.",
+            "answers": [
+                "^(dam )?seek$"
+            ]
+        },
+        {
+            "index" : 22,  "worth": 3,"response_file" : null,
+            "build": {
+                "title": "Doors Q22",
+                "description": "Adivinhe a entidade pelos emojis:\n🙄🕛",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "Sim! a entidade é o &{answer_provided}.",
+            "answers": [
+                "^dread$"
+            ]
+        },
+        {
+            "index" : 23,  "worth": 3,"response_file" : null,
+            "build": {
+                "title": "Doors Q23",
+                "description": "Adivinhe a entidade pelos emojis:\n🕷️",
+                "color": "#FF5733",  "file" : null,  "footer": "1 resposta válida"
+            },
+            "response": "Sim! a entidade é o &{answer_provided}.",
+            "answers": [
+                "^timothy$"
+            ]
+        },
+        {
+            "index": 24, "worth": 3, "response_file": null,
+            "build": {
+                "title": "Doors Q24",
+                "description": "Descubra o modo com os emojis:\n🌹2️⃣",
+                "color": "#FF5733", "file": null, "footer": "flor para o dudu"
+            },
+            "response": "Sim! o modo é o &{answer_provided}.",
+            "answers": [
+                "^floor 2|the mines$"
+            ]
+        },
+        {
+            "index": 25, "worth": 3, "response_file": null,
+            "build": {
+                "title": "Doors Q25",
+                "description": "Descubra o modo com os emojis:\n🚗⬛",
+                "color": "#FF5733", "file": null, "footer": "1 resposta válida"
+            },
+            "response": "Sim! o modo é o &{answer_provided}.",
+            "answers": [
+                "^super hard mode$"
+            ]
+        },
+        {
+            "index": 26, "worth": 3, "response_file": null,
+            "build": {
+                "title": "Doors Q26",
+                "description": "Descubra o modo com os emojis:\n🙄⏰",
+                "color": "#FF5733", "file": null, "footer": "1 resposta válida"
+            },
+            "response": "Sim! é o &{answer_provided}.",
+            "answers": [
+                "^backdoor$"
+            ]
+        },
+        {
+            "index": 27, "worth": 3, "response_file": null,
+            "build": {
+                "title": "Doors Q27",
+                "description": "Descubra o modo com os emojis:\n➖🚪",
+                "color": "#FF5733", "file": null, "footer": "1 resposta válida"
+            },
+            "response": "Sim! é o &{answer_provided}.",
+            "answers": [
+                "^backdoor$"
+            ]
+        },
+        {
+            "index": 28, "worth": 3, "response_file": null,
+            "build": {
+                "title": "Doors Q28",
+                "description": "Descubra o modo com os emojis:\n💯🚪",
+                "color": "#FF5733", "file": null, "footer": "1 resposta válida"
+            },
+            "response": "Sim! o modo é o &{answer_provided}.",
+            "answers": [
+                "^the hotel|floor 1$"
             ]
         }
     ]

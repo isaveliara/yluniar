@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Highlight NPT{% endblock %}
+
+{% block content %}
+    <h2>Exemplo de Codeblock</h2>
+    {{ codeblock | safe }}
+
+    <form id="highlight-form">
+        <textarea name="code" id="code-input" rows="6" cols="60"></textarea>
+        <button type="submit">Formatar</button>
+    </form>
+
+    <div id="highlight-output"></div>
+
+    <script>
+        document.getElementById("highlight-form").onsubmit = async function(e) {
+            e.preventDefault();
+            let code = document.getElementById("code-input").value;
+
+            let response = await fetch("/highlight", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ code: code })
+            });
+
+            let result = await response.json();
+            document.getElementById("highlight-output").innerHTML = result.highlighted_code;
+        };
+    </script>
+{% endblock %}
