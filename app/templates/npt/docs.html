@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação NPT</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/doc_styles.css') }}">
+</head>
+<body>
+    <div class="doc-container">
+        <h1>Documentação NPT</h1>
+
+        <div class="doc-section">
+            <h2>📚 Introdução</h2>
+            <p><strong>NPT</strong> é uma linguagem interpretada e tipada estaticamente, projetada para:</p>
+            <ul>
+                <li>Interação com APIs (Discord e Suni)</li>
+                <li>Controle de fluxo simples e amigável</li>
+                <li>Manipulação básica de dados</li>
+                <li>Execução de scripts com substituição dinâmica de valores</li>
+            </ul>
+        </div>
+
+        <div class="doc-section">
+            <h2>🚀 Primeiros Passos</h2>
+            <h3>Tipos de Dados</h3>
+            <table class="notation-table">
+                <tr><th>Tipo</th><th>Descrição</th><th>Exemplo</th></tr>
+                <tr><td><code>Int</code></td><td>Números inteiros</td><td><code>40028922</code></td></tr>
+                <tr><td><code>Float</code></td><td>Números decimais</td><td><code>3,1415</code></td></tr>
+                <tr><td><code>Bool</code></td><td>Valores lógicos</td><td><code>&true</code> ou <code>&false</code></td></tr>
+                <tr><td><code>Char</code></td><td>Caractere único</td><td><code>c'A'</code></td></tr>
+                <tr><td><code>Str</code></td><td>Cadeia de caracteres</td><td><code>s'BOM DIA PIRANHA'</code></td></tr>
+                <tr><td><code>List</code></td><td>Coleção de valores</td><td><code>{3,14, s'bem vindo'}</code></td></tr>
+                <tr><td><code>Dict</code></td><td>Dicionário (chave Str)</td><td><code>{s'joao': s'admin'}</code></td></tr>
+                <tr><td><code>Nil</code></td><td>Valor nulo</td><td><code>nil</code></td></tr>
+            </table>
+        </div>
+
+        <div class="doc-section">
+            <h2>🔍 Variáveis e Placeholders</h2>
+            <h3>Placeholders Dinâmicos</h3>
+            <div class="codeblock-npt">
+                <pre><code>&{username} &{userId} &{userAvatarUrl}
+&{guildId} &{guildName} &{guildAvatarUrl}
+&{channelName} &{channelId} &{runnerId}</code></pre>
+            </div>
+
+            <h3>Declaração de Variáveis</h3>
+            <div class="codeblock-npt">
+                <pre><code>~Int &set phone 40028922
+~Str &set message s'Hello' + s' World'
+~List &set options {s'hi', 123, &true}::randomOf::toStr</code></pre>
+            </div>
+
+            <h3>Uso em Strings</h3>
+            <div class="codeblock-npt">
+                <pre><code>std::nout() -> s'Seu número: ${phone}'
+std::nout() -> s'Mensagem: ${message}'</code></pre>
+            </div>
+        </div>
+
+        <div class="doc-section">
+            <h2>🎮 Controle de Fluxo</h2>
+            <h3>Estrutura Condicional (<code>&if</code>)</h3>
+            <div class="codeblock-npt">
+                <pre><code>&if (&{runnerName} == s'lan') &do{
+    std::nout() -> s'Olá Lan!'
+    &kit  # Encerra execução
+&}</code></pre>
+            </div>
+            <div class="warning-box">
+                <strong>Regras:</strong>
+                <ul>
+                    <li>Expressão deve retornar <code>&true</code></li>
+                    <li>Bloco delimitado por <code>&do{ ... &}</code></li>
+                    <li><code>&kit</code> interrompe execução</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="doc-section">
+            <h2>🔧 Operadores</h2>
+
+            <p>Os <strong>operadores</strong> são símbolos que selecionam 1 ou 2 valores ao seu redor, avaliando eles em um único.<br>Avalia expressões como <code>1 + 2</code> em <code>3</code>, <code>1 + 2 * 3</code> em <code>7</code>, etc..<br>Denominaremos o operando esquerdo como <code>a</code>, e operando direito como <code>b</code> (caso seja operador unário, apenas <code>a</code>).</p>
+
+            <h3>Operadores Lógicos</h3>
+            <table class="notation-table">
+                <tr><th>Operador</th><th>Descrição</th><th>Exemplo</th></tr>
+                <tr><td><code>&&</code></td><td>E lógico</td><td><code>a:bool && b:bool</code></td></tr>
+                <tr><td><code>||</code></td><td>OU lógico</td><td><code>a:bool || b:bool</code></td></tr>
+                <tr><td><code>!</code></td><td>Negação</td><td><code>!a:bool</code></td></tr>
+            </table>
+
+            <h3>Operadores Booleanos</h3>
+            <table class="notation-table">
+                <tr><th>Operador</th><th>Descrição</th><th>Exemplo</th></tr>
+                <tr><td><code>==</code></td><td>Igualdade</td><td><code>a:any == b:any</code></td></tr>
+                <tr><td><code>~=</code></td><td>Diferença</td><td><code>a:any ~= b:any</code></td></tr>
+                <tr><td><code>></code></td><td>Maior que</td><td><code>a:num > b:num</code></td></tr>
+                <tr><td><code><</code></td><td>Menor que</td><td><code>a:num < b:num</code></td></tr>
+                <tr><td><code>?</code></td><td>Está em</td><td><code>a:any ? b:any</code></td></tr>
+            </table>
+
+            <h3>Operadores Aritiméticos</h3>
+            <table class="notation-table">
+                <tr><th>Operador</th><th>Descrição</th><th>Exemplo</th></tr>
+                <tr><td><code>+</code></td><td>Mais</td><td><code>a:num + b:num</code></td></tr>
+                <tr><td><code>-</code></td><td>Menos</td><td><code>a:num - b:num</code></td></tr>
+                <tr><td><code>*</code></td><td>Vezes</td><td><code>a:num * b:num</code></td></tr>
+                <tr><td><code>/</code></td><td>Dividido</td><td><code>a:num / b:num</code></td></tr>
+            </table>
+
+            <h3>Precedência dos Operadores</h3>
+            <ol>
+                <li><code>[]</code>, <code>{}</code>, <code>::</code></li>
+                <li><code>!</code></li>
+                <li><code>*</code>, <code>/</code></li>
+                <li><code>+</code>, <code>-</code></li>
+                <li><code>?</code>, <code>#</code></li>
+                <li><code>&&</code></li>
+                <li><code>||</code></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

@@ -3,24 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SunNet - Commands</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/cmd_list_other.css') }}">
+    <title>SunNet - Commands (desktop)</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/commands_styles.css') }}">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Comandos</h1>
-            <div class="filters">
-                <button onclick="expandAll()">Expandir Todos</button>
-                <button onclick="collapseAll()">Colapsar Todos</button>
-                <label for="filter">Filtrar por Tag:</label>
-                <select id="filter" onchange="filterCommands(this.value)">
-                    <option value="">Todos</option>
-                    {% for tag in tags %}
-                        <option value="{{ tag.name }}">{{ tag.name }}</option>
-                    {% endfor %}
-                </select>
+        <div class="header-inner">
+            <div class="button-container">
+                <a href="/chat">
+                    <img src="{{ url_for('static', filename='images/simulate.png') }}" alt="Simulate">
+                </a>
+                <a href="/">
+                    <img src="{{ url_for('static', filename='images/home.png') }}" alt="Home">
+                </a>
+            </div>
+            <div class="container">
+                <h1>Comandos</h1>
+                <div class="filters-container">
+                    <div class="filters">
+                        <button onclick="expandAll()">Expandir Todos</button>
+                        <button onclick="collapseAll()">Colapsar Todos</button>
+                        <label for="filter">Filtrar por Tag:</label>
+                        <select id="filter" onchange="filterCommands(this.value)">
+                            <option value="">Todos</option>
+                            {% for tag in tags %}
+                                <option value="{{ tag.name }}">{{ tag.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

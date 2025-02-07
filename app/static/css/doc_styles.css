@@ -1,0 +1,136 @@
+/* Estilos base da documentação - tema escuro profissional */
+body {
+    background: linear-gradient(145deg, #1a2633, #2b3b4e);
+    color: #c0c5ce;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+.doc-container {
+    background: #1a2633dd;
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+    border: 1px solid #2d3b4d;
+}
+
+h1, h2, h3 {
+    color: #7f8fa4;
+    font-family: 'Fira Code', monospace;
+    border-bottom: 2px solid #2d3b4d;
+    padding-bottom: 0.5rem;
+    margin: 2rem 0 1.5rem;
+}
+
+h1 {
+    font-size: 2.2rem;
+    color: #6cb6ff;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #98c379;
+}
+
+h3 {
+    font-size: 1.4rem;
+    color: #d19a66;
+}
+
+p {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.doc-section {
+    background: #1e2a37;
+    border-radius: 6px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-left: 4px solid #3b4048;
+}
+
+code:not(.codeblock-npt code) {
+    background: #2d3b4d;
+    color: #abb2bf;
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+}
+
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+}
+
+a {
+    color: #c678dd;
+    text-decoration: none;
+    border-bottom: 1px dashed #c678dd55;
+}
+
+a:hover {
+    color: #e5c07b;
+    border-bottom-style: solid;
+}
+
+/* Tabelas de referência */
+.notation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background: #1a2633;
+}
+
+.notation-table th {
+    background: #2d3b4d;
+    padding: 1rem;
+    text-align: left;
+    font-family: 'Fira Code', monospace;
+}
+
+.notation-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #2d3b4d;
+}
+
+/* Componentes interativos */
+.info-box {
+    background: #2d796122;
+    border: 1px solid #2d796155;
+    border-radius: 6px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.warning-box {
+    background: #cd7c8d22;
+    border: 1px solid #cd7c8d55;
+    border-left: 4px solid #cd7c8d;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+    
+    .doc-container {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+}
